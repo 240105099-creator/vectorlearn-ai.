@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Learn vectors with differentiated practice, instant feedback, and AI-powered hints." />
+  <title>VectorLearn AI — Learn Vectors at Your Level</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="VectorLearn AI home"><span class="brand-mark">V</span><span>VectorLearn<span class="brand-ai"> AI</span></span></a>
+    <nav><a href="#learn">Learning path</a><a href="#how">How it works</a></nav>
+    <a class="top-cta" href="#learn">Start learning <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> PERSONALIZED MATH PRACTICE</div>
+        <h1>Vectors, made<br><span>clear for you.</span></h1>
+        <p class="hero-text">One mathematical idea. Three ways to learn it. Practice vectors at your own pace with guided steps, instant feedback, and an AI study partner.</p>
+        <a class="primary-btn" href="#learn">Explore your level <span>↓</span></a>
+        <div class="hero-stats"><div><strong>3</strong><span>learning levels</span></div><i></i><div><strong>∞</strong><span>ways to practice</span></div><i></i><div><strong>1:1</strong><span>personal guidance</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of vectors on a coordinate plane">
+        <div class="art-card"><div class="art-top"><span>VECTOR SPACE</span><span class="art-pill">2D · R²</span></div>
+          <svg class="vector-svg" viewBox="0 0 440 330" role="img" aria-label="Coordinate plane with vector a and vector b">
+            <defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M 30 0 L 0 0 0 30" fill="none" stroke="#dce5e2" stroke-width="1"/></pattern><marker id="arrowA" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#e17b55"/></marker><marker id="arrowB" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#3f7770"/></marker></defs>
+            <rect x="25" y="18" width="390" height="290" rx="14" fill="url(#grid)"/>
+            <path d="M25 258 H415 M100 18 V308" stroke="#82938e" stroke-width="1.5"/><path d="M407 252 L415 258 L407 264 M94 26 L100 18 L106 26" fill="none" stroke="#82938e" stroke-width="1.5"/>
+            <path d="M100 258 L250 108" stroke="#e17b55" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowA)"/><path d="M100 258 L340 198" stroke="#3f7770" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowB)"/>
+            <circle cx="100" cy="258" r="5" fill="#1d3934"/><text x="260" y="99" fill="#c96843" font-size="16" font-weight="700">a = (5, 5)</text><text x="292" y="186" fill="#32655e" font-size="16" font-weight="700">b = (8, 2)</text><text x="80" y="282" fill="#6d7c77" font-size="12">O</text><text x="395" y="280" fill="#6d7c77" font-size="12">x</text><text x="112" y="35" fill="#6d7c77" font-size="12">y</text>
+          </svg>
+          <div class="art-bottom"><span><b class="key-dot orange"></b> Vector a</span><span><b class="key-dot green"></b> Vector b</span><span class="formula">a + b = (13, 7)</span></div>
+        </div>
+        <div class="floating-note"><span class="sparkle">✦</span><div><strong>Small steps, big clarity</strong><small>Hints that meet you where you are</small></div></div>
+      </div>
+    </section>
+
+    <section class="learning wrap" id="learn">
+      <div class="section-heading"><div><div class="eyebrow">YOUR LEARNING PATH</div><h2>Choose your starting point.</h2><p>Same topic, different support. You can switch levels whenever you're ready.</p></div><div class="progress-chip"><span class="progress-icon">↗</span><span><b>Learn by doing</b><small>Practice · Feedback · Improve</small></span></div></div>
+      <div class="level-tabs" role="tablist" aria-label="Choose difficulty level">
+        <button class="level-tab active" data-level="foundation" role="tab" aria-selected="true"><span class="tab-number">01</span><span><b>Foundation</b><small>Build confidence</small></span><span class="tab-arrow">↗</span></button>
+        <button class="level-tab" data-level="standard" role="tab" aria-selected="false"><span class="tab-number">02</span><span><b>Standard</b><small>Apply the concept</small></span><span class="tab-arrow">↗</span></button>
+        <button class="level-tab" data-level="advanced" role="tab" aria-selected="false"><span class="tab-number">03</span><span><b>Advanced</b><small>Think deeper</small></span><span class="tab-arrow">↗</span></button>
+      </div>
+
+      <div class="lesson-card">
+        <div class="lesson-main">
+          <div class="lesson-meta"><span id="levelBadge" class="level-badge foundation-badge">FOUNDATION</span><span class="time-label">◷ &nbsp;<span id="timeLabel">3–5 min</span></span></div>
+          <h3 id="problemTitle">Add two vectors</h3>
+          <p id="problemText" class="problem-text">A vector tells us how far to move horizontally and vertically. Add the matching components to find the combined movement.</p>
+          <div class="math-box"><div class="math-label">YOUR CHALLENGE</div><div id="problemEquation" class="equation">a = (2, 1), &nbsp; b = (3, 4)<br><span>Find a + b.</span></div><div id="problemContext" class="problem-context">Think: horizontal + horizontal, vertical + vertical.</div></div>
+          <form id="answerForm" class="answer-form"><label for="answerInput" id="answerLabel">Your answer <span>(write as x, y)</span></label><div class="answer-row"><input id="answerInput" type="text" placeholder="e.g. 5, 5" autocomplete="off" required /><button class="primary-btn check-btn" type="submit">Check answer <span>→</span></button></div><p class="input-help" id="inputHelp">You can type (5,5), 5, 5, or [5,5].</p></form>
+          <div id="feedback" class="feedback" aria-live="polite" hidden></div>
+          <div class="lesson-actions"><button id="hintBtn" class="secondary-btn" type="button">☼ Get a hint</button><button id="solutionBtn" class="text-btn" type="button">Show worked solution</button></div>
+          <div id="hintPanel" class="assist-panel" hidden></div><div id="solutionPanel" class="assist-panel solution-panel" hidden></div>
+        </div>
+        <aside class="ai-panel"><div class="ai-header"><div class="ai-icon">✦</div><div><b>Your AI study partner</b><small>Personalized support</small></div><span class="online-dot" title="Ready"></span></div><p class="ai-intro">Need a different explanation? Ask for a hint, a simpler explanation, or a new practice question tailored to this level.</p>
+          <div class="ai-prompts"><button type="button" class="prompt-chip" data-prompt="Explain this concept in simpler words with a small example.">Explain simply <span>↗</span></button><button type="button" class="prompt-chip" data-prompt="Give me one extra practice question at the same difficulty, but do not show the answer yet.">Another question <span>↗</span></button><button type="button" class="prompt-chip" data-prompt="Explain a real-world use of this vector concept.">Real-world example <span>↗</span></button></div>
+          <label class="ai-label" for="aiQuestion">Ask your own question</label><textarea id="aiQuestion" rows="3" placeholder="I'm confused about adding the y-components…"></textarea><button id="askAiBtn" class="ai-btn" type="button"><span>✦</span> Ask AI <span class="ai-arrow">→</span></button><p id="aiStatus" class="ai-status" aria-live="polite">AI responses require a Gemini API key configured by the site owner.</p><div id="aiResponse" class="ai-response" hidden></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="how-section" id="how"><div class="wrap how-inner"><div><div class="eyebrow">BUILT FOR DIFFERENT LEARNERS</div><h2>Support that changes<br>as you grow.</h2><p>Everyone can work toward the same mathematical goal, with the right amount of guidance at each step.</p></div><div class="how-steps"><div class="how-step"><span>01</span><div><b>Choose a level</b><p>Start with guided practice or jump into a challenge.</p></div></div><div class="how-step"><span>02</span><div><b>Try it yourself</b><p>Submit your answer and get immediate feedback.</p></div></div><div class="how-step"><span>03</span><div><b>Get personal guidance</b><p>Use hints, worked solutions, or ask the AI for another explanation.</p></div></div></div></div></section>
+    <section class="footer-cta wrap"><div><div class="eyebrow">YOUR NEXT STEP</div><h2>Progress, one vector at a time.</h2><p>Understanding matters more than speed. Keep exploring.</p></div><a href="#learn" class="primary-btn">Continue learning <span>↑</span></a></section>
+  </main>
+  <footer class="footer"><div class="brand"><span class="brand-mark">V</span><span>VectorLearn<span class="brand-ai"> AI</span></span></div><p>Made for curious minds. Math that meets you where you are.</p><span>Educational project · Vectors</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
